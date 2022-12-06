@@ -1,1 +1,8 @@
-
+newtonPoly = [nodes_, values_, x_] := (
+  poly = 0;
+  mult = 1;
+  For[i = 1, i <= Length[nodes], i++, 
+    poly += dividedDiff[nodes[1 ;; i]], values[[1 ;; i]]] * mult;
+    mult *= (x - nodes[[i]])
+    ];
+Expand[poly])
