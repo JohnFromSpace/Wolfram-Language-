@@ -1,1 +1,4 @@
-
+trigPoly[nodes_, values_, period_, x_] := (
+  nodesChange = ((2Pi)/period)*nodes;
+  
+)
