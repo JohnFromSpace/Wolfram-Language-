@@ -4,6 +4,6 @@ trigPoly[nodes_, values_, period_, x_] := (
     values[[k]]*
     Product[If[i == k, 1, Sin[(x - nodesChange[[i]])/2]/
     Sin[(nodesChange[[k]] - nodesChange[[i]])/2]], {i, 1,
-    }]
+    Length[nodesChange]}, {k, 1, Length[nodesChange]}];
   ]
 )
