@@ -3,3 +3,6 @@ population = {106.46, 123.08, 132.12, 152.27, 180.67, 205.05, 227.23, 249.46};
 p7[x_] := newtonPoly[years, population, x];
 
 Show[Plot[p7[x], {x, 1920, 2000}], ListPlot[Transpose[{years, population}]]]
+
+p7[1952]
+(*157.728 *)
