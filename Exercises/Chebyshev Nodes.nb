@@ -1,2 +1,3 @@
 f[x_] := 1/(1 + 25x^2)
 n = 11;
+chebyshevNodes = N[Table[Cos[(2k - 1) * Pi/(2n)], {k, 1, n}]]
