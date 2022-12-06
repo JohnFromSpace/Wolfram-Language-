@@ -15,3 +15,4 @@ trigPoly2[x_] = trigPoly[x] /.sol2[[1]]
 Show[Plot[{trigPoly2[x]}, {x, 0, 2Pi}], ListPlot[Transpose[{nodes2, values}], PlotStyle->Red]]
 
 (*{{a0->1.69806, a1->-2., a2->0.301942, b1->-0.603446, b2->1.18557}} *)
+(*1.69806-2. Cos[x]+0.301942 Cos[2x]-0.603446 Sin[x]+1.18557 Sin[2 x] *)
