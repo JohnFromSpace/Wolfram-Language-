@@ -11,3 +11,5 @@ nodes10 = Range[-1, 1, 2/10];
 values10 = f[nodes10];
 p10[x_] := newtonPoly[nodes10, values10, x];
 Plot[{f[x], p10[x]}, {x, -1, 1}, PlotLegends->"Expressions"]
+
+Plot[Abs[f[x] - p10[x]], {x, -1, 1}, PlotRange->All]
