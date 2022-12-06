@@ -1,1 +1,5 @@
-
+dividedDiff := If[
+  Length[nodes] == 1,
+  Return[values[[1]]],
+  (dividedDiff[nodes[[2 ;; ]], values[[2 ;; ]]] - dividedDiff[nodes[[ ;; -2]], values[[ ;; -2]]])/(nodes[[-1]] - nodes[[1]])
+]
