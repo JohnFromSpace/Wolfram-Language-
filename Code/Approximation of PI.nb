@@ -16,3 +16,4 @@ L3[x_]:=(x-x0)(x-x1)(x-x2)/((x3-x0)(x3-x1)(x3-x2))
 p[x_]:=y0 L0[x]+y1 L1[x]+y2 L2[x]+y3 L3[x]
 
 p[Pi / 5] // N (*Approximate value*)
+(*0.587061 *)
