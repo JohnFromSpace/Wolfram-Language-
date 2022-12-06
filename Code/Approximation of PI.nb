@@ -23,3 +23,7 @@ absError[x_] := Abs[Sin[x] - p[x]]
 errorEstimate[x_] := (Abs[x(x - Pi/6)(x - Pi/3)(x - Pi/2)]) / 24
 
 Plot[{absError[x], errorEstimate[x]}, {x, 0, Pi/2}]
+
+
+absError[Pi/5] // N
+(*0.000723765 *)
