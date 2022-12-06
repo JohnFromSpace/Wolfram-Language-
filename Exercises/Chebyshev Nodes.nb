@@ -5,3 +5,4 @@ chebyshevNodes = N[Table[Cos[(2k - 1) * Pi/(2n)], {k, 1, n}]]
 
 chebyshevValues = f[chebyshevNodes];
 chebyshevInterpolant[x_] := newtonPoly[chebyshevNodes, chebyshevValues, x]
+Plot[{f[x], chebyshevInterpolant[x]}, {x, -1, 1}]
