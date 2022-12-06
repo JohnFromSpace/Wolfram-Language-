@@ -19,3 +19,5 @@ p[Pi / 5] // N (*Approximate value*)
 (*0.587061 *)
 
 absError[x_] := Abs[Sin[x] - p[x]]
+
+errorEstimate[x_] := (Abs[x(x - Pi/6)(x - Pi/3)(x - Pi/2)]) / 24
