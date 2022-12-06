@@ -1,2 +1,2 @@
 phi[x_] := a0 + a1*E^x + a2*E^(2x) + a3*E^(3x) + a4*E^(4x)
-
+result[x_] := phi[x] /.NSolve[{phi[1] == 1, phi[2] == 12, phi[3] == 110, phi[4] == 1037, phi[5] == 12218}, {a0, a1, a2, a3, a4}][[1]]
