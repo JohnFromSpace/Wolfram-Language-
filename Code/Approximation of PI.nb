@@ -2,3 +2,8 @@ x0 = 0;
 x1 = Pi/6; 
 x2 = Pi/3;
 x3 = Pi/2;
+
+y0 = Sin[x0];
+y1 = Sin[x1];
+y2 = Sin[x2];
+y3 = Sin[x3];
