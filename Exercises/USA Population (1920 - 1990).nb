@@ -6,3 +6,6 @@ Show[Plot[p7[x], {x, 1920, 2000}], ListPlot[Transpose[{years, population}]]]
 
 p7[1952]
 (*157.728 *)
+
+p7[1974]
+(*213.511 *)
