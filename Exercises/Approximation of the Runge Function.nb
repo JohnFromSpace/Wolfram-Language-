@@ -4,3 +4,5 @@ f[x_] := 1 / (1 + 25x^2)
 values4 = f[nodes4];
 p4[x_] := newtonPoly[nodes4, values4, x];
 Plot[{f[x], p4[x]}, {x, -1, 1}, PlotLegends->"Expressions"]
+
+Plot[Abs[f[x] - p4[x]], {x, -1, 1}, PlotRange->All]
