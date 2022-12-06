@@ -1,4 +1,9 @@
 trigPoly[nodes_, values_, period_, x_] := (
   nodesChange = ((2Pi)/period)*nodes;
-  
+  poly = Sum[
+    values[[k]]*
+    Product[If[i == k, 1, Sin[(x - nodesChange[[i]])/2]/
+    Sin[(nodesChange[[k]] - nodesChange[[i]])/2]], {i, 1,
+    }]
+  ]
 )
