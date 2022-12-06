@@ -2,3 +2,5 @@ nodes = {0, 1.5, 3, 4, 6};
 values = {0, 1, 1.5, 4, 2};
 trigPoly[x_] := a0 + a1*Cos[x] + b1*Sin[x] + a2*Cos[2x] + b2*Sin[2x]
 sol = Solve[{trigPoly[0] == 0, trigPoly[1.5] == 1, trigPoly[3] == 1.5, trigPoly[4] == 4, trigPoly[6] == 2}]
+trigPoly[x_] = trigPoly[x] /.sol[[1]]
+
