@@ -13,3 +13,5 @@ nodes2 = nodes * ((2Pi) / 8);
 sol2 = Solve[{trigPoly[nodes2[[1]]] == 0, trigPoly[nodes2[[2]]] == 1, trigPoly[nodes2[[3]]] == 1.5, trigPoly[nodes2[[4]]] == 4, trigPoly[nodes2[[5]]-0.0001] == 2}]
 trigPoly2[x_] = trigPoly[x] /.sol2[[1]]
 Show[Plot[{trigPoly2[x]}, {x, 0, 2Pi}], ListPlot[Transpose[{nodes2, values}], PlotStyle->Red]]
+
+(*{{a0->1.69806, a1->-2., a2->0.301942, b1->-0.603446, b2->1.18557}} *)
