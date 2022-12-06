@@ -27,3 +27,6 @@ Plot[{absError[x], errorEstimate[x]}, {x, 0, Pi/2}]
 
 absError[Pi/5] // N
 (*0.000723765 *)
+
+errorEstimate[Pi/5] // N
+(*0.00108232 *)
