@@ -1,3 +1,5 @@
 intervalLength = 2;
 nodes4 = Range[-1, 1, 2/4];
 f[x_] := 1 / (1 + 25x^2)
+values4 = f[nodes4];
+p4[x_] := newtonPoly[nodes4, values4, x];
