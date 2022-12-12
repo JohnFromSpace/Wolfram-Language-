@@ -2,3 +2,4 @@ nodes = {-2, -1, 0, 1, 2, 3};
 values = {-4, 5, 4, 10, 7, 6};
 f[x_] := a * x^2 + b * x + c
 phi[a_, b_, c_] := Sum[(f[nodes[[i]]] - values[[i]])^2, {i, Length[nodes]}]
+f2[x_] := f[x]/.Solve[{D[phi[a, b, c], a] == 0, D[phi[a, b, c], b] == 0, D[phi[a, b, c], c] == 0}, {a, b, c}][[1]]
