@@ -3,3 +3,4 @@ nodes = {0, 1, 2, 3, 4};
 values = {1, 2, 1, 0, 4};
 phi[a_, b_] := Sum[(f[nodes[[k]]] - values[[k]])^2, {k, Length[nodes]}]
 f1[x_] := f[x]/. Solve[{D[phi[a, b], a] == 0, D[phi[a, b], b] == 0}, {a, b}][[1]]
+f1[x] // Expand
