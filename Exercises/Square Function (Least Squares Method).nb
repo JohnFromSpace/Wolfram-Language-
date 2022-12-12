@@ -4,3 +4,4 @@ f[x_] := a * x^2 + b * x + c
 phi[a_, b_, c_] := Sum[(f[nodes[[i]]] - values[[i]])^2, {i, Length[nodes]}]
 f2[x_] := f[x]/.Solve[{D[phi[a, b, c], a] == 0, D[phi[a, b, c], b] == 0, D[phi[a, b, c], c] == 0}, {a, b, c}][[1]]
 f2[x] //Expand
+Show[ListPlot[Transpose[{nodes, values}]], Plot[f2[x], {x, -2, 3}]]
