@@ -1,5 +1,5 @@
 NSolve[{Integrate[1, {x, 0, 1}] == A1 + A2 + A3,
     Integrate[x, {x, 0, 1}] == A1*x1 + A2*x2 + A3*x3,
     Integrate[x^2, {x, 0, 1}] == A1*x1^2 + A2*x2^2 + A3*x3^2,
-    Integrate[x^3, {x, 0, 1}] == A1*x^3 + A2*x^3 + A3*x^3,
+    Integrate[x^3, {x, 0, 1}] == A1*x1^3 + A2*x2^3 + A3*x3^3,
     }]
