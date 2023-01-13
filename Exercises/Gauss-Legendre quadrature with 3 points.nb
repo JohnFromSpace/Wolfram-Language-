@@ -1,1 +1,1 @@
-
+NSolve[{Integrate[1, {x, 0, 1}] == A1 + A2 + A3,}]
