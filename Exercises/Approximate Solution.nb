@@ -12,4 +12,4 @@ iter = 0;
 While[b-a > epsilon, If[(f[a] * f[(b - a) / 2) < 0]b = (a + b) / 2, a = (a + b) / 2]; iter++;]
 
 Print["x is approximately: ", b // N]
-Print["Number of iterations is: ", iter]
+Print["Number of iterations is approximately: ", iter]
