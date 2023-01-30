@@ -9,4 +9,4 @@ a = 1;
 b = 3;
 iter = 0;
 
-While[b-a > epsilon, If[b = (a + b) / 2, a = (a + b) / 2]; iter++;]
+While[b-a > epsilon, If[(f[a] * f[(b - a) / 2) < 0]b = (a + b) / 2, a = (a + b) / 2]; iter++;]
