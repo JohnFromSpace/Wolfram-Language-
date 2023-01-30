@@ -1,3 +1,6 @@
 f[x_] := E^x - 3;
+
 Plot[f[x], {x, 0, 3}]
+
+(*the iterval is [0,3] we can choose a more limited one such as [1, 3]*)
 
